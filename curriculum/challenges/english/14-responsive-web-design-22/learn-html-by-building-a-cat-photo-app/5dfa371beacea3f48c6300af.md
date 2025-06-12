@@ -57,7 +57,7 @@ const secondSectionLastElemNode = document.querySelectorAll('main > section')[1]
   .lastElementChild;
 assert(
   secondSectionLastElemNode.nodeName === 'H3' &&
-    secondSectionLastElemNode.previousElementSibling.innerText
+    secondSectionLastElemNode.previousElementSibling.innerText.trim()
       .toLowerCase()
       .replace(/\s+/g, ' ') === 'cat lists'
 );
